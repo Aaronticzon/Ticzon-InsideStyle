@@ -161,6 +161,9 @@ gap: 2rem;
   border: 2px solid;
   border-radius: 1rem;
 }
+.header .toggle__menu {
+  display: none;
+}
 @media screen and (max-width: 520px){
   .header .toggle__menu {
     display: flex;
@@ -482,6 +485,20 @@ bottom: .5rem;
 right: 1rem;
 }
 
+/* ABOUT PAGE BANNER MOBILE */
+@media screen and (max_width: 520px){
+  .aboutBanner_left{
+    display: none;
+  }
+  .aboutBanner_right h1{
+    font-size: 4rem;
+  }
+.aboutBanner_right ul li a{
+  font-style: 1.5rem;
+}
+}
+
+
 .lateststyle{
   background-color: var(--clr-dark);
   padding: 3rem 0;
@@ -501,7 +518,6 @@ right: 1rem;
   background-color: var(--clr-light);
   max-width: 40rem;
   margin-top: 4rem;
-  
 }
 .lateststyleSection_card img{
   width: 40rem;
@@ -519,28 +535,52 @@ right: 1rem;
   margin-bottom: 1rem;
 }
 
+/* CATALOG PAGE BANNER */
+.catalogBanner__bg{
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./img/catalog-banner.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* to center the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.catalogBanner h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+.catalogBanner p{
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
 
-/* REPEATABLE */
+
+  /* REPEATABLE */
 .btn{
   background-color: transparent;
   border-radius: 10rem;
   padding: 1rem 2rem;
   color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
-.btn.bg--semi-light{
-  background-color: var(--clr-light);
+.btn.bg--semilight{
+  background-color: var(--clr-semilight);
   color: var(--clr-dark);
 }
-.btn.bg--semi-light:hover{
+.btn.bg--semilight:hover{
   background-color: var(--clr-dark);
   color: var(--clr-semilight);
 }
-
 .btn--nobg{
   color: var(--clr-dark);
 }
 .btn--nobg:hover{
-color: var(--clr-primary);
-
+  color: var(--clr-primary);
 }
