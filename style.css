@@ -536,7 +536,7 @@ right: 1rem;
 }
 
 /* CATALOG PAGE BANNER */
-.catalogBanner__bg{
+.catalogBanner_bg {
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -551,18 +551,241 @@ right: 1rem;
   justify-content: center;
   text-align: center;
 }
-.catalogBanner h1{
+.catalogBanner h1 {
   font-size: 7rem;
   font-weight: 700;
   color: var(--clr-primary);
 }
-.catalogBanner p{
+.catalogBanner p {
   font-size: 3rem;
   line-height: 2.5rem;
 }
+/* INTERIOR PACKAGE */
+
+.package_wrapper h2 {
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem;
+}
+.package_theme {
+  padding: 5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.package_left {
+  width: 500rem;
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.package_left img {
+  width: 70rem;
+}
+.package_right h2 {
+  color: var(--clr-primary);
+  display: flex;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 6rem;
+  height: -20px;
+}
+.package_right p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+.package_theme:nth-child(odd) {
+  background-color: var(--clr-semilight);
+  flex-direction: row-reverse;
+  display: flex;
+  margin: auto;
+}
+@media screen and (max-width: 520px) {
+  .package_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 
-  /* REPEATABLE */
+
+/* UPDATES PAGE*/
+.updates{
+    padding: 50px 0;
+}
+.updates h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--clr-secondary);
+}
+.updates_wrapper{
+    display: flex;
+    gap: 50px;
+
+}
+.updates_content{
+    padding: 40px 0;
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+}
+.updates_content h1{
+    text-align: center;
+    font-size: 60px;
+    color: var(--clr-primary);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.updates_content p{
+  font-size: 2rem;
+
+
+}
+.updatescard{
+    padding: 50px 0;
+
+}.updatescard_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.updates_cards {
+  display: grid;
+  grid-template-columns: 40rem 40rem;
+  grid-gap: 50px;
+}
+.updates_cards .card {
+  padding: 30px;
+  background-color: var(--clr-semilight);
+}
+
+.updates_cards .card h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--clr-dark);
+}
+.updates_sidebar ul li {
+  margin-bottom: 20px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+
+}
+.updates_sidebar h2{
+  display: flex;
+  padding: 10px ;
+  grid-gap: 10px;
+}
+.project{
+    padding: 50px
+
+}
+.container{
+  justify-content: space-between;
+}
+.container h2{
+    margin-bottom: 20px;
+    text-align: justify;
+    color: var(--clr-secondary);
+    font-weight:500;
+    font-size: 2rem;
+
+    
+}
+.project_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; 
+}
+.project_wrapper ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.project_wrapper img{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.updates_cards .card a{
+  display: flex;
+  font-size: 3.5rem;
+  color: var(--clr-dark);
+  font-weight: 650;
+
+}
+.project_card a{
+  font-size: 3rem;
+  color: var(--clr-dark);
+  font-weight: 400;
+  padding: 1rem;
+
+}
+
+
+/* CONTACT */
+.contact h1{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  display: flex;
+  margin-top: -10rem;
+}
+.contact{
+  padding: 50px 0;
+}
+.contact_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.contact_form input,
+.contact_form text area{
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid var(--clr-dark);
+  padding: 10px 16px;
+}
+.contact_form{
+  width: 100%;
+  padding: 10px 16px;
+  
+}
+.contact_info{
+  background: var(--clr-dark);
+  color: var(--clr-secondary);
+  padding: 40px;
+}
+.contact-info ul{
+  list-style: none;
+}
+.contact-info ul li{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30rem;
+}
+.contact-info ul li i{
+  font-size: 40px;
+}
+.contact{
+  background-color: var(--clr-semilight);
+  list-style: none;
+}
+
+
+
+/* REPEATABLE */
 .btn{
   background-color: transparent;
   border-radius: 10rem;
