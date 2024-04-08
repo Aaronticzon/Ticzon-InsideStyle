@@ -396,8 +396,8 @@ font-weight: 100;
 /* CALL TO ACTION */
 .cta{
 padding: 3rem 0;
-background-color: var(--clr-primary);
-color: var(--clr-semilight);
+background-color: var(--clr-semilight);
+color: var(--clr-dark);
 }
 .cta__wrapper{
   display: flex;
@@ -416,7 +416,7 @@ font-weight: 700;
 /* FOOTER */
 .footer{
   background-color: var(--clr-dark);
-  color: var(--clr-semilight);
+  color: var(--clr-light);
   padding: 2rem 0;
 }
 .footer__wrapper{
@@ -428,7 +428,7 @@ justify-content: space-between;
  gap: 1rem;
 }
 .footer ul li a{
-  color: var(--clr-semilight);
+  color: var(--clr-light);
 }
 
 /* FOOTER MOBILE */
@@ -613,177 +613,155 @@ right: 1rem;
 
 
 
-/* UPDATES PAGE*/
-.updates{
-    padding: 50px 0;
+/* UPDATES */
+.updates {
+  padding: 5rem 0;
 }
-.updates h2{
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--clr-secondary);
+.updates_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18rem;
 }
-.updates_wrapper{
-    display: flex;
-    gap: 50px;
+.update_contents h2 {
+  color: var(--clr-primary);
+  font-size: 7rem;
+  font-weight: 700;
+  text-align: center;
+}
+.update_contents p {
+  text-align: justify;
+}
 
+/* BUILDING DESIGN */
+.design {
+  padding: 5rem 0;
+  background-color: var(--clr-light);
 }
-.updates_content{
-    padding: 40px 0;
-    max-width: 500px;
-    width: 100%;
-    justify-content: center;
+.design_main h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--clr-secondary);
 }
-.updates_content h1{
-    text-align: center;
-    font-size: 60px;
-    color: var(--clr-primary);
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-.updates_content p{
-  font-size: 2rem;
-
-
-}
-.updatescard{
-    padding: 50px 0;
-
-}.updatescard_wrapper {
+.design_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+  grid-gap: 5rem;
 }
-.updates_cards {
+.design_cards {
   display: grid;
-  grid-template-columns: 40rem 40rem;
-  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
-.updates_cards .card {
-  padding: 30px;
+.cards.cards {
+  padding: 2rem;
   background-color: var(--clr-semilight);
+  margin-bottom: 3rem 0;
+  font-weight: bold;
 }
-
-.updates_cards .card h4 {
+.design_sidebar h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--clr-secondary);
+}
+.design_cards h4 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 800;
-  color: var(--clr-dark);
+  font-style: 3rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
-.updates_sidebar ul li {
+.design_sidebar ul li {
   margin-bottom: 20px;
-  font-weight: 800;
-  display: flex;
   justify-content: space-between;
-
-}
-.updates_sidebar h2{
+  font-size: 2.5rem;
+  font-weight: bold;
   display: flex;
-  padding: 10px ;
-  grid-gap: 10px;
 }
-.project{
-    padding: 50px
-
-}
-.container{
-  justify-content: space-between;
-}
-.container h2{
-    margin-bottom: 20px;
-    text-align: justify;
-    color: var(--clr-secondary);
-    font-weight:500;
-    font-size: 2rem;
-
-    
-}
-.project_wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px; 
-}
-.project_wrapper ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    font-weight: bold;
-
-}
-.project_wrapper img{
-    width: 100%;
-    margin-bottom: 10px;
-
-}
-.updates_cards .card a{
-  display: flex;
+.design_cards a {
+  margin-bottom: 3rem;
   font-size: 3.5rem;
   color: var(--clr-dark);
-  font-weight: 650;
-
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-.project_card a{
-  font-size: 3rem;
-  color: var(--clr-dark);
-  font-weight: 400;
-  padding: 1rem;
+@media screen and (max-width: 520px) {
+  .updates_wrapper {
+      flex-direction: column;
+  }
+  .design {
+      flex-direction: column;
+  }
 
+  .updates {
+      flex-direction: column;
+  }
 }
 
 
 /* CONTACT */
-.contact h1{
-  color: var(--clr-primary);
-  font-size: 6rem;
+.contact {
+  padding: 20rem 0;
+}
+
+.contact h2 {
+  font-size: 30px;
   font-weight: 700;
-  display: flex;
-  margin-top: -10rem;
 }
-.contact{
-  padding: 50px 0;
+
+.contact h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--clr-primary);
 }
-.contact_wrapper{
+.contact_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
 .contact_form input,
-.contact_form text area{
+.contact_form textarea {
   border: none;
-  background-color: transparent;
+  background-color: var(transparent);
   width: 100%;
-  border-bottom: 1px solid var(--clr-dark);
+  border-bottom: 1px solid gray;
   padding: 10px 16px;
 }
-.contact_form{
+
+.contact_form button {
   width: 100%;
   padding: 10px 16px;
-  
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  margin-top: 10px;   
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1rem;
 }
-.contact_info{
-  background: var(--clr-dark);
+.contact_info {
+  background-color: var(--clr-dark);
   color: var(--clr-secondary);
   padding: 40px;
 }
-.contact-info ul{
-  list-style: none;
-}
-.contact-info ul li{
+
+.contact_info ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 30rem;
-}
-.contact-info ul li i{
-  font-size: 40px;
-}
-.contact{
-  background-color: var(--clr-semilight);
-  list-style: none;
+  gap: 30px;
 }
 
+.contact_info ul li a {
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
+}
+.contact_info h2{
+  color: var(--clr-light);
+  font-weight: 700;
+  display: flex;
 
+}
 
 /* REPEATABLE */
 .btn{
